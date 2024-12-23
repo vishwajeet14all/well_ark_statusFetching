@@ -7,7 +7,7 @@ const app = express();
 
 // Allow only specific origin
 const corsOptions = {
-  origin: [process.env.Shopify_Server, process.env.Local_Server],    
+  origin: [process.env.Shopify_Server, process.env.Local_Server, process.env.Netlify_Server],    
   methods: ["GET", "POST"], // Specify allowed methods
   allowedHeaders: ["Content-Type"], // Specify allowed headers
 };
